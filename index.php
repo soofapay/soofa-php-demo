@@ -43,7 +43,7 @@ if (count($_POST) > 0) {
       integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
       crossorigin="anonymous"
     />
-
+    
   
   </head>
   <body>
@@ -159,11 +159,19 @@ if (@$msg!="") { ?>
              id="checkout"
               class="d-flex justify-content-center soofa"
               method="POST"
+              action="index.php"
             >
               <input type="hidden" value="Huawei Y9" name="added_product" />
               <input type="hidden" value="5" name="amount" />
               <input type="text" name="reference" value="PHP Demo" hidden />
               <input type="text" name="tid" value="" hidden />
+              <button
+                class="btn btn-primary btn-md my-0 p qbn-submit"
+                type="button"
+                name="add-to-cart"
+              >
+                Proceed to pay
+              </button>
               </form>
           </div>
         </div>
@@ -178,14 +186,23 @@ if (@$msg!="") { ?>
               <span>Ksh.9</span>
             </p>
             <form
-              id="cart"
-              action="/cart"
-              class="d-flex justify-content-center"
+             id="checkout"
+              class="d-flex justify-content-center soofa"
               method="POST"
+              action="index.php"
             >
-              <input type="hidden" value="ThinkPad" name="added_product" />
-              <input type="hidden" value="9" name="price" />
-            </form>
+              <input type="hidden" value="Huawei Y9" name="added_product" />
+              <input type="hidden" value="9" name="amount" />
+              <input type="text" name="reference" value="PHP Demo" hidden />
+              <input type="text" name="tid" value="" hidden />
+              <button
+                class="btn btn-primary btn-md my-0 p qbn-submit"
+                type="button"
+                name="add-to-cart"
+              >
+                Proceed to pay
+              </button>
+              </form>
           </div>
         </div>
         <!--Grid column-->
@@ -199,14 +216,23 @@ if (@$msg!="") { ?>
               <span>Ksh.7.5</span>
             </p>
             <form
-              id="cart"
-              action=""
-              class="d-flex justify-content-center"
+             id="checkout"
+              class="d-flex justify-content-center soofa"
               method="POST"
+              action="index.php"
             >
-              <input type="hidden" value="Samsung s7" name="added_product" />
-              <input type="hidden" value="7.5" name="price" />
-            </form>
+              <input type="hidden" value="Huawei Y9" name="added_product" />
+              <input type="hidden" value="7.5" name="amount" />
+              <input type="text" name="reference" value="PHP Demo" hidden />
+              <input type="text" name="tid" value="" hidden />
+              <button
+                class="btn btn-primary btn-md my-0 p qbn-submit"
+                type="button"
+                name="add-to-cart"
+              >
+                Proceed to pay
+              </button>
+              </form>
           </div>
         </div>
         <!--Grid column-->
